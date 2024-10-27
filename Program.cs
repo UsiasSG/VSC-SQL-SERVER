@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 
-string? cadena=builder.Configuration.GetConnectionString("DefaultConnection");.
+string? cadena=builder.Configuration.GetConnectionString("DefaultConnection");
 if(cadena!=null){
 builder.Services.AddControllers();
 builder.Services.AddDbContext<Conexiones>(opt =>
